@@ -4,11 +4,11 @@ Autopilot written in Tensorflow for Self Driving Cars.
 ```sh 
 ./get_data.sh # Downloads the driving data. Around 2.2GB
 ```
-if you are on windows, you can download it from [here.]()
+if you are on windows, you can download it from [here.](https://drive.google.com/file/d/0B-KJCaaF7elleG1RbzVPZWV4Tlk/view)
 
 # How to run:
 ```sh 
-python run.py # runs a live feed from a webcam.
+python run_webcam.py # runs a live feed from a webcam.
 ```
 ```sh 
 python run_dataset.py # runs a live feed from a webcam.
