@@ -20,6 +20,8 @@ python run_dataset.py # runs a live feed from a webcam.
 python train.py # The model comes pretrained already. But you can train if you want to. GTX 1070 needed around an hour.
 ```
 
+**Details:** The code is well commented and every line should be explained. You shouldn't have any issues understanding the model or the algorithm.
+
 # Other datasets
 - Udacity: https://medium.com/udacity/open-sourcing-223gb-of-mountain-view-driving-data-f6b5593fbfa5
 70 minutes of data ~ 223GB
@@ -29,6 +31,11 @@ The last two are not optimal for this, since you need to make some code changes.
 - Comma.ai Dataset [80 GB Uncompressed] https://github.com/commaai/research
 - Apollo Dataset with different environment data of road: http://data.apollo.auto/?locale=en-us&lang=en
 
+# Goals
+- a big goal would be implement slam on the side while driving
+- building a datapipeline 
+- collecting more data 
+- Transfering the Algorithm
 
 # Credits:
 - https://github.com/SullyChen/Autopilot-TensorFlow
@@ -37,3 +44,4 @@ The last two are not optimal for this, since you need to make some code changes.
 - https://devblogs.nvidia.com/explaining-deep-learning-self-driving-car/
 
 If anything is unclear, just hit me up. 
+
