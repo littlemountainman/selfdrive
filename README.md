@@ -1,5 +1,7 @@
 # Self-Driving-Car-Tensorflow
 Autopilot written in Tensorflow for Self Driving Cars. 
+# Demo 
+![alt text](repostuff/demo.gif "Demo video")
 # Download the data:
 ```sh 
 ./get_data.sh # Downloads the driving data. Around 2.2GB
