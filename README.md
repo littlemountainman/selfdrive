@@ -33,3 +33,5 @@ The last two are not optimal for this, since you need to make some code changes.
 - Research paper: End to End Learning for Self-Driving Cars by Nvidia. [https://arxiv.org/pdf/1604.07316.pdf]
 - Nvidia blog: https://devblogs.nvidia.com/deep-learning-self-driving-cars/ 
 - https://devblogs.nvidia.com/explaining-deep-learning-self-driving-car/
+
+If anything is unclear, just hit me up. 
