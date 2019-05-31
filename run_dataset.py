@@ -43,7 +43,7 @@ while(cv2.waitKey(10) != ord('q')):
     degrees = model.y.eval(feed_dict={model.x: [image], model.keep_prob: 1.0})[0][0] * 180.0 / scipy.pi
     #call("clear")
     print("Steering angle: " + str(degrees) + " (pred)\t" + str(ys[i]*180/scipy.pi) + " (actual)")
-    cv2.imshow("frame", cv2.cvtColor(full_image, cv2.COLOR_BGR2GRAY))
+    cv2.imshow("frame", cv2.cvtColor(full_image, cv2.COLOR_RGB2BGR))
     #make smooth angle transitions by turning the steering wheel based on the difference of the current angle
     #and the predicted angle
     #Angle at which the steering wheel image should be rotated
