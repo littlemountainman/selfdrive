@@ -16,22 +16,24 @@ L2NormConst = 0.001
 train_vars = tf.trainable_variables()
 
 loss = tf.reduce_mean(tf.square(tf.subtract(model.y_, model.y))) + tf.add_n([tf.nn.l2_loss(v) for v in train_vars]) * L2NormConst
+accuracy = 100 - loss 
 train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
 sess.run(tf.initialize_all_variables())
 
 # create a summary to monitor cost tensor
 tf.summary.scalar("loss", loss)
+tf.summary.scalar("accuracy", accuracy)
 # merge all summaries into a single op
 merged_summary_op =  tf.summary.merge_all()
 
-saver = tf.train.Saver(write_version = saver_pb2.SaverDef.V1)
+saver = tf.train.Saver(write_version = saver_pb2.SaverDef.V2)
 
 # op to write logs to Tensorboard
 logs_path = './logs'
 summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 # 30 epochs is a good number. You can in or decrease baed on your computation power.
 epochs = 30
-batch_size = 100
+batch_size = 32
 
 # Training with those values takes about an hour on a GTX 1070 with CUDA 10.0
 for epoch in range(epochs):

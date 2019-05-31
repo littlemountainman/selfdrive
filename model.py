@@ -50,6 +50,11 @@ b_conv5 = bias_variable([64])
 
 h_conv5 = tf.nn.relu(conv2d(h_conv4, W_conv5, 1) + b_conv5)
 
+W_conv6 = weight_variable([3, 3, 64, 64])
+b_conv6 = bias_variable([64])
+
+h_conv6 = tf.nn.relu(conv2d(h_conv4, W_conv6, 1) + b_conv6)
+
 #FCL 1
 W_fc1 = weight_variable([1152, 1164])
 b_fc1 = bias_variable([1164])
