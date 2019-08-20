@@ -8,7 +8,7 @@ Youtube video goes live soon.
 ```sh 
 ./get_data.sh # Downloads the driving data. Around 2.2GB
 ```
-if you are on windows, you can download it from [here.](https://drive.google.com/file/d/0B-KJCaaF7elleG1RbzVPZWV4Tlk/view)
+if you are on windows, you can download it from [here.](https://drive.google.com/file/d/0B-KJCaaF7elleG1RbzVPZWV4Tlk/view?usp=sharing)
 
 # How to run:
 ```sh 
