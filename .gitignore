@@ -17,5 +17,4 @@ tony.mp4
 dataset.tfrecord
 pommes.mp4
 Self-Driving-Car-Tensorflow
-models
-
+*.mp4

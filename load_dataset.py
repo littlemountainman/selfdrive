@@ -15,12 +15,13 @@ def _bytes_feature(value):
 def _float_feature(value):
     return tf.train.Feature(float_list=tf.train.FloatList(value=[value]))
 
-LIMIT = 45000
+LIMIT = 20000
 DATA_FOLDER = 'driving_dataset'
 TRAIN_FILE = os.path.join(DATA_FOLDER, 'data.txt')
 
 def preprocess(img):
-    resized = cv2.resize(img[:, :, 1], (100, 100))
+    resized = cv2.resize(img[:,:, 1], (320, 180))
+    cv2.imwrite("gray.jpg", resized)
     return resized
 
 def return_data():
@@ -47,30 +48,11 @@ def return_data():
         print("Processing "+ str(i))
         img = plt.imread(X[i])
         features.append(preprocess(img))
-    """
-    for i in X:
-        image_string = open(i, 'rb').read()
-        images_raw.append(image_string)
-
-    X = tf.train.BytesList(value=images_raw)
-    y = tf.train.FloatList(value=y)
-    main_storage = {
-        'images': tf.train.Feature(bytes_list=X),
-        'labels': tf.train.Feature(float_list=y)
-    }
-    """
 
     features = np.array(features).astype('float32')
     labels = np.array(y)
 
     np.save("features.npy", features)
     np.save("labels.npy", labels)
-    """
-    storage_dataset = tf.train.Features(feature=main_storage)
-    example = tf.train.Example(features=storage_dataset)
-    with tf.io.TFRecordWriter('dataset.tfrecord') as writer:
-        writer.write(example.SerializeToString())
-        writer.close()
-    print("------------- Saving to to tfrecord -------------")
-    """
+
 return_data()
