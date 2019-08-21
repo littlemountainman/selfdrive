@@ -1,4 +1,5 @@
-wget --continue https://doc-10-bk-docs.googleusercontent.com/docs/securesc/qeefpal31vi21ht00c3jjafnkv9cr03f/5u5ekskrisjti3q1883dt6qcr3mmpp76/1558188000000/15290327230174755112/07859038920317547996/0B-KJCaaF7elleG1RbzVPZWV4Tlk?e=download&nonce=q09ivd5evmjac&user=07859038920317547996&hash=5hj52mao221h6ds7l56bsfir7q5nt8jj
+#!/bin/bash
 
+wget --continue --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=0B-KJCaaF7elleG1RbzVPZWV4Tlk' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=0B-KJCaaF7elleG1RbzVPZWV4Tlk" -O driving_dataset.zip && rm -rf /tmp/cookies.txt
 
 unzip driving_dataset.zip
