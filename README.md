@@ -1,9 +1,10 @@
-Data Preperation
-====================================
 
+selfdrive
+==================
+![driving](drivingman.gif)
 ## Install:
 <pre>
-sudo ./cereal/install_capnp.sh
+sudo ./preperation/cereal/install_capnp.sh
 </pre>
 ## Data
 Now you need to download the commaai dataset from [here](https://github.com/commaai/comma2k19)
