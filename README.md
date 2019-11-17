@@ -7,7 +7,7 @@ selfdrive
 sudo ./preperation/cereal/install_capnp.sh
 </pre>
 ## Data
-Now you need to download the commaai dataset from [here](https://github.com/commaai/comma2k19)
+Now you need to download the commaai dataset from [here](http://academictorrents.com/details/65a2fbc964078aff62076ff4e103f18b951c5ddb)
 you will get 10 files labeled from Chunk1.zip to Chunk10.zip. Choose one and unpack it into the
 data folder. In the data folder should now be folders with name 2019-0.... etc. Then you have to read 
 them. 
