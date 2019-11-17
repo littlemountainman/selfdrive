@@ -1,1 +1,0 @@
-0000000000000000000000000000000000000000 692ae1c7c4cb0dfff18b1a65ea421c503ba26cab Leon <leon.hillmann@googlemail.com> 1568385766 +0200	fetch --progress origin --tags +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +refs/heads/master:refs/remotes/origin/master: storing head
